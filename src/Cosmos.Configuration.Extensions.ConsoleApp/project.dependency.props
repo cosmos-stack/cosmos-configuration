@@ -1,0 +1,12 @@
+<Project>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Cosmos.Configuration.CliAdapter\Cosmos.Configuration.CliAdapter.csproj" />
+      <ProjectReference Include="..\Cosmos.Configuration.IniAdapter\Cosmos.Configuration.IniAdapter.csproj" />
+      <ProjectReference Include="..\Cosmos.Configuration.XmlAdapter\Cosmos.Configuration.XmlAdapter.csproj" />
+      <ProjectReference Include="..\Cosmos.Configuration.JsonAdapter\Cosmos.Configuration.JsonAdapter.csproj" />
+      <ProjectReference Include="..\Cosmos.Configuration.YamlAdapter\Cosmos.Configuration.YamlAdapter.csproj" />
+      <ProjectReference Include="..\Cosmos.Configuration.TomlAdapter\Cosmos.Configuration.TomlAdapter.csproj" />
+    </ItemGroup>
+
+</Project>
