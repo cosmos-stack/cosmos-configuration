@@ -1,1 +1,1 @@
-# cosmos-configuration
+# COSMOSLOOPS/Configuration
