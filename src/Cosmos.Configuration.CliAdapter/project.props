@@ -1,0 +1,9 @@
+<Project>
+
+    <PropertyGroup>
+        <AssemblyName>Cosmos.Configuration.CliAdapter</AssemblyName>
+        <PackageId>Cosmos.Configuration.CliAdapter</PackageId>
+        <Description>Command line adapter for Cosmos configuration.</Description>
+    </PropertyGroup>
+
+</Project>

@@ -1,0 +1,9 @@
+<Project>
+
+    <PropertyGroup>
+        <AssemblyName>Cosmos.Configuration.XmlAdapter</AssemblyName>
+        <PackageId>Cosmos.Configuration.XmlAdapter</PackageId>
+        <Description>Xml file adapter for Cosmos configuration.</Description>
+    </PropertyGroup>
+
+</Project>
