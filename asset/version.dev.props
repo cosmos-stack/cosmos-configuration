@@ -1,7 +1,7 @@
 <Project>
 
     <PropertyGroup>
-        <Dependency-PkgVersion>0.1.9.9</Dependency-PkgVersion>
+        <Dependency-PkgVersion>0.2.0</Dependency-PkgVersion>
     </PropertyGroup>
 
 </Project>
