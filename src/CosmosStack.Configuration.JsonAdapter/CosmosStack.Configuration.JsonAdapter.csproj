@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Configurations>Debug;Release</Configurations>
+        <Platforms>AnyCPU</Platforms>
+        <AssemblyName>CosmosStack.Configuration.JsonAdapter</AssemblyName>
+        <PackageId>CosmosStack.Configuration.JsonAdapter</PackageId>
+    </PropertyGroup>
+
+    <Import Project="project.props" />
+
+    <Import Project="..\..\common.props" />
+
+    <Import Project="project.dependency.props" />
+
+</Project>

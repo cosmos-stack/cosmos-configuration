@@ -1,0 +1,9 @@
+<Project>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CosmosStack.Configuration.XmlAdapter\CosmosStack.Configuration.XmlAdapter.csproj" />
+      <ProjectReference Include="..\CosmosStack.Configuration.JsonAdapter\CosmosStack.Configuration.JsonAdapter.csproj" />
+      <ProjectReference Include="..\CosmosStack.Configuration.YamlAdapter\CosmosStack.Configuration.YamlAdapter.csproj" />
+    </ItemGroup>
+
+</Project>

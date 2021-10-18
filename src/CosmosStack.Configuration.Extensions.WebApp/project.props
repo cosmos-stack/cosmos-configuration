@@ -1,0 +1,12 @@
+<Project>
+
+    <PropertyGroup>
+        <AssemblyName>CosmosStack.Configuration.Extensions.WebApp</AssemblyName>
+        <PackageId>CosmosStack.Configuration.Extensions.WebApp</PackageId>
+        <Description>
+            Web application configuration package for Cosmos base library. 
+            This is a portable bag that integrates common extensions of the development environment for convenience and practicality.
+        </Description>
+    </PropertyGroup>
+
+</Project>

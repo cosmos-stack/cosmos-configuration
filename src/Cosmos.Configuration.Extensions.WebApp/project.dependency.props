@@ -1,9 +1,0 @@
-<Project>
-
-    <ItemGroup>
-      <ProjectReference Include="..\Cosmos.Configuration.XmlAdapter\Cosmos.Configuration.XmlAdapter.csproj" />
-      <ProjectReference Include="..\Cosmos.Configuration.JsonAdapter\Cosmos.Configuration.JsonAdapter.csproj" />
-      <ProjectReference Include="..\Cosmos.Configuration.YamlAdapter\Cosmos.Configuration.YamlAdapter.csproj" />
-    </ItemGroup>
-
-</Project>
