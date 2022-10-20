@@ -19,12 +19,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{DE3FA3
 ProjectSection(SolutionItems) = preProject
 	asset\images\icon.back.png = asset\images\icon.back.png
 	asset\images\icon.png = asset\images\icon.png
+	asset\images\icon,back3.png = asset\images\icon,back3.png
+	asset\images\icon.back2.png = asset\images\icon.back2.png
 EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{7FDF7ADB-C05B-4E23-9780-D4C690B3782A}"
 ProjectSection(SolutionItems) = preProject
 	asset\props\misc.props = asset\props\misc.props
 	asset\props\package.props = asset\props\package.props
+	asset\props\sourcelink.env.props = asset\props\sourcelink.env.props
+	asset\props\target.feature.props = asset\props\target.feature.props
 EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{69EE3646-7E48-47D7-8808-9B0ECB63A6F6}"
@@ -37,27 +41,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{69EE
 		scripts\Release_Withoutbuild.bat = scripts\Release_Withoutbuild.bat
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosStack.Configuration.JsonAdapter", "src\CosmosStack.Configuration.JsonAdapter\CosmosStack.Configuration.JsonAdapter.csproj", "{2707EB00-170A-453C-8CAC-DE7A2B1E6D98}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Configuration.JsonAdapter", "src\Cosmos.Configuration.JsonAdapter\Cosmos.Configuration.JsonAdapter.csproj", "{2707EB00-170A-453C-8CAC-DE7A2B1E6D98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosStack.Configuration", "src\CosmosStack.Configuration\CosmosStack.Configuration.csproj", "{F5DB2BF2-DD90-4B69-BF6C-E41FD7BEC261}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Configuration", "src\Cosmos.Configuration\Cosmos.Configuration.csproj", "{F5DB2BF2-DD90-4B69-BF6C-E41FD7BEC261}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "adapters", "adapters", "{38AFE36E-2ED0-4EF3-8436-2A8B28422FB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosStack.Configuration.XmlAdapter", "src\CosmosStack.Configuration.XmlAdapter\CosmosStack.Configuration.XmlAdapter.csproj", "{4AD2026D-5FA7-481E-B13F-D9D737E07C47}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Configuration.XmlAdapter", "src\Cosmos.Configuration.XmlAdapter\Cosmos.Configuration.XmlAdapter.csproj", "{4AD2026D-5FA7-481E-B13F-D9D737E07C47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosStack.Configuration.YamlAdapter", "src\CosmosStack.Configuration.YamlAdapter\CosmosStack.Configuration.YamlAdapter.csproj", "{EAE1F64C-6BA6-491B-B9B2-D17242A6D312}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Configuration.YamlAdapter", "src\Cosmos.Configuration.YamlAdapter\Cosmos.Configuration.YamlAdapter.csproj", "{EAE1F64C-6BA6-491B-B9B2-D17242A6D312}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosStack.Configuration.IniAdapter", "src\CosmosStack.Configuration.IniAdapter\CosmosStack.Configuration.IniAdapter.csproj", "{494F4967-2F17-4F26-A329-55460A27D4BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Configuration.IniAdapter", "src\Cosmos.Configuration.IniAdapter\Cosmos.Configuration.IniAdapter.csproj", "{494F4967-2F17-4F26-A329-55460A27D4BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosStack.Configuration.TomlAdapter", "src\CosmosStack.Configuration.TomlAdapter\CosmosStack.Configuration.TomlAdapter.csproj", "{7A2ED4EF-D202-4BAF-8197-DF94B7AA7264}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Configuration.TomlAdapter", "src\Cosmos.Configuration.TomlAdapter\Cosmos.Configuration.TomlAdapter.csproj", "{7A2ED4EF-D202-4BAF-8197-DF94B7AA7264}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosStack.Configuration.CliAdapter", "src\CosmosStack.Configuration.CliAdapter\CosmosStack.Configuration.CliAdapter.csproj", "{0B07AF85-DAA0-4E38-9820-40229B9E260F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Configuration.CliAdapter", "src\Cosmos.Configuration.CliAdapter\Cosmos.Configuration.CliAdapter.csproj", "{0B07AF85-DAA0-4E38-9820-40229B9E260F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "extensions", "extensions", "{D4059DF9-53EA-47B4-9063-80C81C647867}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosStack.Configuration.Extensions.WebApp", "src\CosmosStack.Configuration.Extensions.WebApp\CosmosStack.Configuration.Extensions.WebApp.csproj", "{5AEACB45-8F29-4832-8350-060FD273DD1F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Configuration.Bundles.WebAppPackage", "src\Cosmos.Configuration.Bundles.WebAppPackage\Cosmos.Configuration.Bundles.WebAppPackage.csproj", "{5AEACB45-8F29-4832-8350-060FD273DD1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosStack.Configuration.Extensions.ConsoleApp", "src\CosmosStack.Configuration.Extensions.ConsoleApp\CosmosStack.Configuration.Extensions.ConsoleApp.csproj", "{E307050D-B5AF-4DC6-90D4-1B19C2C94EBD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Configuration.Bundles.CliAppPackage", "src\Cosmos.Configuration.Bundles.CliAppPackage\Cosmos.Configuration.Bundles.CliAppPackage.csproj", "{E307050D-B5AF-4DC6-90D4-1B19C2C94EBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

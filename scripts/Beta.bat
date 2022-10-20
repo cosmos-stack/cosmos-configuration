@@ -1,7 +1,7 @@
 @echo off
 
 echo =======================================================================
-echo CosmosStack.Configuration
+echo Cosmos.Configuration
 echo =======================================================================
 
 ::go to parent folder
@@ -23,19 +23,19 @@ echo.
 ::start to package all projects
 
 ::core
-dotnet pack src/CosmosStack.Configuration             -c Release -o nuget_packages --no-restore
+dotnet pack src/Cosmos.Configuration             -c Release -o nuget_packages --no-restore
 
 ::adapters
-dotnet pack src/CosmosStack.Configuration.CliAdapter  -c Release -o nuget_packages --no-restore
-dotnet pack src/CosmosStack.Configuration.IniAdapter  -c Release -o nuget_packages --no-restore
-dotnet pack src/CosmosStack.Configuration.JsonAdapter -c Release -o nuget_packages --no-restore
-dotnet pack src/CosmosStack.Configuration.TomlAdapter -c Release -o nuget_packages --no-restore
-dotnet pack src/CosmosStack.Configuration.XmlAdapter  -c Release -o nuget_packages --no-restore
-dotnet pack src/CosmosStack.Configuration.YamlAdapter -c Release -o nuget_packages --no-restore
+dotnet pack src/Cosmos.Configuration.CliAdapter  -c Release -o nuget_packages --no-restore
+dotnet pack src/Cosmos.Configuration.IniAdapter  -c Release -o nuget_packages --no-restore
+dotnet pack src/Cosmos.Configuration.JsonAdapter -c Release -o nuget_packages --no-restore
+dotnet pack src/Cosmos.Configuration.TomlAdapter -c Release -o nuget_packages --no-restore
+dotnet pack src/Cosmos.Configuration.XmlAdapter  -c Release -o nuget_packages --no-restore
+dotnet pack src/Cosmos.Configuration.YamlAdapter -c Release -o nuget_packages --no-restore
 
 ::extensions
-dotnet pack src/CosmosStack.Configuration.Extensions.ConsoleApp -c Release -o nuget_packages --no-restore
-dotnet pack src/CosmosStack.Configuration.Extensions.WebApp     -c Release -o nuget_packages --no-restore
+dotnet pack src/Cosmos.Configuration.Bundles.CliAppPackage -c Release -o nuget_packages --no-restore
+dotnet pack src/Cosmos.Configuration.Bundles.WebAppPackage -c Release -o nuget_packages --no-restore
 
 for /R "nuget_packages" %%s in (*symbols.nupkg) do (
     del "%%s"
@@ -45,9 +45,10 @@ echo.
 echo.
 
 ::push nuget packages to server
-for /R "nuget_packages" %%s in (*.nupkg) do ( 	
+for /R "nuget_packages" %%s in (*.nupkg) do (
+::    dotnet nuget push "%%s" -s "Beta" --skip-duplicate --no-symbols
     dotnet nuget push "%%s" -s "Beta" --skip-duplicate
-	echo.
+    echo.
 )
 
 ::get back to build folder
