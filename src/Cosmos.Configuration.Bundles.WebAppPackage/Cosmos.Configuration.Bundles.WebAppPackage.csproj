@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Configurations>Debug;Release</Configurations>
+        <Platforms>AnyCPU</Platforms>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <AssemblyName>Cosmos.Configuration.Bundles.WebAppPackage</AssemblyName>
+        <PackageId>CosmosStack.Configuration.Bundles.WebAppPackage</PackageId>
+        <Description>
+            Web application configuration package for Cosmos base library.
+            This is a portable bag that integrates common extensions of the development environment for convenience and practicality.
+        </Description>
+    </PropertyGroup>
+
+    <Import Project="..\..\common.props" />
+
+    <ItemGroup>
+        <ProjectReference Include="..\Cosmos.Configuration.XmlAdapter\Cosmos.Configuration.XmlAdapter.csproj" />
+        <ProjectReference Include="..\Cosmos.Configuration.JsonAdapter\Cosmos.Configuration.JsonAdapter.csproj" />
+        <ProjectReference Include="..\Cosmos.Configuration.YamlAdapter\Cosmos.Configuration.YamlAdapter.csproj" />
+    </ItemGroup>
+
+</Project>

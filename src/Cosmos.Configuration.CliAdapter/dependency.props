@@ -1,0 +1,36 @@
+<Project>
+
+    <PropertyGroup>
+        <MsConf-RefVersion>6.0.0</MsConf-RefVersion>
+        <MsConf-RefVersion-nfx452>1.1.2</MsConf-RefVersion-nfx452>
+    </PropertyGroup>
+
+    <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
+        <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="$(MsConf-RefVersion)" />
+    </ItemGroup>
+
+    <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0' ">
+        <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="$(MsConf-RefVersion)" />
+    </ItemGroup>
+
+    <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1' ">
+        <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="$(MsConf-RefVersion)" />
+    </ItemGroup>
+
+    <ItemGroup Condition=" '$(TargetFramework)' == 'net48' ">
+        <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="$(MsConf-RefVersion)" />
+    </ItemGroup>
+
+    <ItemGroup Condition=" '$(TargetFramework)' == 'net472' ">
+        <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="$(MsConf-RefVersion)" />
+    </ItemGroup>
+
+    <ItemGroup Condition=" '$(TargetFramework)' == 'net462' ">
+        <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="$(MsConf-RefVersion)" />
+    </ItemGroup>
+
+    <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
+        <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="$(MsConf-RefVersion-nfx452)" />
+    </ItemGroup>
+
+</Project>

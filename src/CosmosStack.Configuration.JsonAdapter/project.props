@@ -1,9 +1,0 @@
-<Project>
-
-    <PropertyGroup>
-        <AssemblyName>CosmosStack.Configuration.JsonAdapter</AssemblyName>
-        <PackageId>CosmosStack.Configuration.JsonAdapter</PackageId>
-        <Description>Json file adapter for Cosmos configuration.</Description>
-    </PropertyGroup>
-
-</Project>

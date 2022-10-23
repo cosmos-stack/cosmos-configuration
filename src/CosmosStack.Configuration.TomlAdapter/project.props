@@ -1,9 +1,0 @@
-<Project>
-
-    <PropertyGroup>
-        <AssemblyName>CosmosStack.Configuration.TomlAdapter</AssemblyName>
-        <PackageId>CosmosStack.Configuration.TomlAdapter</PackageId>
-        <Description>Toml file adapter for Cosmos configuration.</Description>
-    </PropertyGroup>
-
-</Project>

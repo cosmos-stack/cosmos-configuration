@@ -1,9 +1,0 @@
-<Project>
-
-    <PropertyGroup>
-        <AssemblyName>CosmosStack.Configuration.IniAdapter</AssemblyName>
-        <PackageId>CosmosStack.Configuration.IniAdapter</PackageId>
-        <Description>Ini file adapter for Cosmos configuration.</Description>
-    </PropertyGroup>
-
-</Project>

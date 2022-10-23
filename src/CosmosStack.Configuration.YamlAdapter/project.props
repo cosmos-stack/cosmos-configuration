@@ -1,9 +1,0 @@
-<Project>
-
-    <PropertyGroup>
-        <AssemblyName>CosmosStack.Configuration.YamlAdapter</AssemblyName>
-        <PackageId>CosmosStack.Configuration.YamlAdapter</PackageId>
-        <Description>Yaml file adapter for Cosmos configuration.</Description>
-    </PropertyGroup>
-
-</Project>

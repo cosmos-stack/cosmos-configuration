@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cosmos.Configuration</name>
+    </assembly>
+    <members>
+        <member name="T:Cosmos.Configuration.ConfigurationGetter">
+            <summary>
+            Configuration Getter <br />
+            默认配置获取器
+            </summary>
+        </member>
+        <member name="T:Cosmos.Configuration.ConfigurationManager">
+            <summary>
+            Configuration Manager <br />
+            配置管理器
+            </summary>
+        </member>
+        <member name="T:Cosmos.Configuration.IConfigurationGetter">
+            <summary>
+            Configuration Getter Interface <br />
+            配置获取接口
+            </summary>
+        </member>
+        <member name="T:Cosmos.Configuration.Start.ConfigurationStarter">
+            <summary>
+            Configuration Starter <br />
+            配置扩展入口
+            </summary>
+        </member>
+        <member name="T:Cosmos.Configuration.Start.IConfigurationSourceStrategy">
+            <summary>
+            Configuration Source Strategy <br />
+            配置源策略
+            </summary>
+        </member>
+        <member name="T:Cosmos.Configuration.Start.IConfigurationStrategy">
+            <summary>
+            Configuration Strategy <br />
+            配置策略
+            </summary>
+        </member>
+        <member name="T:Cosmos.Configuration.Start.IFileStrategy">
+            <summary>
+            File Strategy <br />
+            文件策略
+            </summary>
+        </member>
+        <member name="T:Cosmos.Configuration.Start.IStreamStrategy">
+            <summary>
+            Stream Strategy <br />
+            流策略
+            </summary>
+        </member>
+        <member name="T:Cosmos.Dependency.DependencyExtensions">
+            <summary>
+            Dependency Extensions
+            </summary>
+        </member>
+        <member name="M:Cosmos.Dependency.DependencyExtensions.AddConfiguration``1(``0)">
+            <summary>
+            Add Configuration Support
+            </summary>
+            <param name="register"></param>
+            <typeparam name="TRegister"></typeparam>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

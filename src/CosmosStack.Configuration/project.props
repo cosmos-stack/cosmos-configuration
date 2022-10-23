@@ -1,9 +1,0 @@
-<Project>
-
-    <PropertyGroup>
-        <AssemblyName>CosmosStack.Configuration</AssemblyName>
-        <PackageId>CosmosStack.Configuration</PackageId>
-        <Description>Configuration package for Cosmos base library</Description>
-    </PropertyGroup>
-
-</Project>
