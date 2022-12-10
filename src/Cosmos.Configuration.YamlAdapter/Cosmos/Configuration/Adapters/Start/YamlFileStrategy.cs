@@ -5,21 +5,16 @@ using Microsoft.Extensions.Configuration;
 
 namespace Cosmos.Configuration.Adapters.Start;
 
-#if !NET451 && !NET452
 public class YamlFileStrategy :
     IFileStrategy,
     IStreamStrategy,
     IConfigurationSourceStrategy
-#else
-    public class YamlFileStrategy :
-        IFileStrategy
-#endif
 {
     public void AddFile(ConfigurationStarter starter, IFileProvider provider, string path, bool optional, bool reloadOnChange)
     {
         starter.AddYamlFile(provider, path, optional, reloadOnChange);
     }
-#if !NET451 && !NET452
+
     public void AddConfigurationSource<TConfigurationSource>(ConfigurationStarter starter, Action<TConfigurationSource> configureSource) where TConfigurationSource : FileConfigurationSource
     {
         if (typeof(TConfigurationSource) != typeof(YamlConfigurationSource)) return;
@@ -30,5 +25,4 @@ public class YamlFileStrategy :
     {
         starter.AddYamlStream(stream);
     }
-#endif
 }

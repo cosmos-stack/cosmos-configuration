@@ -36,7 +36,7 @@ public static class CosmosYamlAdapterExtensions
     {
         return starter.AddConfig(updater => updater.AddYamlFile(path, true, reloadOnChange));
     }
-#if !NET451 && !NET452
+
     public static ConfigurationStarter AddYamlConfigurationSource(this ConfigurationStarter starter, Action<YamlConfigurationSource> configureSource)
     {
         return starter.AddConfig(updater => updater.AddYamlFile(configureSource));
@@ -46,5 +46,4 @@ public static class CosmosYamlAdapterExtensions
     {
         return starter.AddConfig(updater => updater.AddYamlStream(stream));
     }
-#endif
 }

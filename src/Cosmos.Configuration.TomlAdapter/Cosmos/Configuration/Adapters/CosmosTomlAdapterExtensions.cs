@@ -36,7 +36,7 @@ public static class CosmosTomlAdapterExtensions
     {
         return starter.AddConfig(updater => updater.AddTomlFile(path, true, reloadOnChange));
     }
-#if !NET451 && !NET452
+
     public static ConfigurationStarter AddTomlConfigurationSource(this ConfigurationStarter starter, Action<TomlConfigurationSource> configureSource)
     {
         return starter.AddConfig(updater => updater.AddTomlFile(configureSource));
@@ -46,5 +46,4 @@ public static class CosmosTomlAdapterExtensions
     {
         return starter.AddConfig(updater => updater.AddTomlStream(stream));
     }
-#endif
 }

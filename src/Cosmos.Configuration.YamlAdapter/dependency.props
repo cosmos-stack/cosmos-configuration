@@ -1,36 +1,7 @@
 <Project>
 
-    <PropertyGroup>
-        <AlexConf-RefVersion>6.0.0</AlexConf-RefVersion>
-        <AlexConf-RefVersion-nfx452>1.1.5</AlexConf-RefVersion-nfx452>
-    </PropertyGroup>
-
-    <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
-        <PackageReference Include="Alexinea.Extensions.Configuration.Yaml" Version="$(AlexConf-RefVersion)" />
-    </ItemGroup>
-
-    <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0' ">
-        <PackageReference Include="Alexinea.Extensions.Configuration.Yaml" Version="$(AlexConf-RefVersion)" />
-    </ItemGroup>
-
-    <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1' ">
-        <PackageReference Include="Alexinea.Extensions.Configuration.Yaml" Version="$(AlexConf-RefVersion)" />
-    </ItemGroup>
-
-    <ItemGroup Condition=" '$(TargetFramework)' == 'net48' ">
-        <PackageReference Include="Alexinea.Extensions.Configuration.Yaml" Version="$(AlexConf-RefVersion)" />
-    </ItemGroup>
-
-    <ItemGroup Condition=" '$(TargetFramework)' == 'net472' ">
-        <PackageReference Include="Alexinea.Extensions.Configuration.Yaml" Version="$(AlexConf-RefVersion)" />
-    </ItemGroup>
-
-    <ItemGroup Condition=" '$(TargetFramework)' == 'net462' ">
-        <PackageReference Include="Alexinea.Extensions.Configuration.Yaml" Version="$(AlexConf-RefVersion)" />
-    </ItemGroup>
-
-    <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
-        <PackageReference Include="Alexinea.Extensions.Configuration.Yaml" Version="$(AlexConf-RefVersion-nfx452)" />
+    <ItemGroup>
+        <PackageReference Include="Alexinea.Extensions.Configuration.Yaml" Version="7.0.0" />
     </ItemGroup>
 
 </Project>

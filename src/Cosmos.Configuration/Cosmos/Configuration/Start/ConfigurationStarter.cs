@@ -13,7 +13,7 @@ public class ConfigurationStarter
     private bool _hasBuilt;
 
     private readonly Dictionary<Type, IConfigurationStrategy> _strategyCache;
-    private readonly object _strategyLockObj = new object();
+    private readonly object _strategyLockObj = new();
 
     private ConfigurationStarter(ConfigurationBuilder builder, bool setBasePath, string basePath)
     {
@@ -33,8 +33,7 @@ public class ConfigurationStarter
 
     public ConfigurationStarter AddConfig(Func<IConfigurationBuilder, IConfigurationBuilder> configUpdater)
     {
-        if (configUpdater is null)
-            throw new ArgumentNullException(nameof(configUpdater));
+        configUpdater.Require();
         if (_hasBuilt)
             throw new InvalidOperationException("Configuration has been initialized.");
         _builder = configUpdater.Invoke(_builder);

@@ -16,10 +16,8 @@ public static class CosmosCliAdapterExtensions
         return starter.AddConfig(updater => updater.AddCommandLine(args, switchMappings));
     }
 
-#if !NET451 && !NET452
     public static ConfigurationStarter AddCliConfigurationSource(this ConfigurationStarter starter, Action<CommandLineConfigurationSource> configureSource)
     {
         return starter.AddConfig(updater => updater.AddCommandLine(configureSource));
     }
-#endif
 }

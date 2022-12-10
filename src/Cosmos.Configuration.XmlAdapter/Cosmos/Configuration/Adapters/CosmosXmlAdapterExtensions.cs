@@ -36,7 +36,7 @@ public static class CosmosXmlAdapterExtensions
     {
         return starter.AddConfig(updater => updater.AddXmlFile(path, true, reloadOnChange));
     }
-#if !NET451 && !NET452
+
     public static ConfigurationStarter AddXmlConfigurationSource(this ConfigurationStarter starter, Action<XmlConfigurationSource> configureSource)
     {
         return starter.AddConfig(updater => updater.AddXmlFile(configureSource));
@@ -46,5 +46,4 @@ public static class CosmosXmlAdapterExtensions
     {
         return starter.AddConfig(updater => updater.AddXmlStream(stream));
     }
-#endif
 }

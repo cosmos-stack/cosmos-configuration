@@ -36,7 +36,7 @@ public static class CosmosJsonAdapterExtensions
     {
         return starter.AddConfig(updater => updater.AddJsonFile(path, true, reloadOnChange));
     }
-#if !NET451 && !NET452
+
     public static ConfigurationStarter AddJsonConfigurationSource(this ConfigurationStarter starter, Action<JsonConfigurationSource> configureSource)
     {
         return starter.AddConfig(updater => updater.AddJsonFile(configureSource));
@@ -46,5 +46,4 @@ public static class CosmosJsonAdapterExtensions
     {
         return starter.AddConfig(updater => updater.AddJsonStream(stream));
     }
-#endif
 }
