@@ -1,7 +1,7 @@
 <Project>
 
     <PropertyGroup>
-        <Dependency-RefVersion>0.4.7.3</Dependency-RefVersion>
+        <Dependency-RefVersion>0.4.9.1</Dependency-RefVersion>
     </PropertyGroup>
 
 </Project>
